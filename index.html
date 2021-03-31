@@ -18,28 +18,36 @@
 <body>
 
     <!-- Header -->
-    <header class="container">
-        <a href="index.html" class="logo-link"><span class="logo">Web</span><span class="studio-up">Studio</span></a>
+    <header class="container header-main">
+        <a href="index.html" class="logo-link"><span class="logo-web">Web</span><span class="studio-up">Studio</span></a>
         <nav class="navigation-links">
-            <ul>
-                <li><a href="./index.html" class="navigation-links current">Студия</a></li>
-                <li><a href="./portfolio.html" class="navigation-links">Портфолио</a></li>
-                <li><a href="" class="navigation-links">Контакты</a></li>
+            <ul class="list navigation-list">
+                <li class="navigation-list-item"><a href="./index.html" class="navigation-links current">Студия</a></li>
+                <li class="navigation-list-item"><a href="./portfolio.html" class="navigation-links">Портфолио</a></li>
+                <li class="navigation-list-item"><a href="" class="navigation-links">Контакты</a></li>
             </ul>
         </nav>
-        <a href="mailto:info@devstudio.com" class="header-contacts">info@devstudio.com</a>
-        <a href="tel:+380961111111" class="header-contacts">+38 096 111 11 11</a>
+        <div class="header-contacts-set">
+        <a href="mailto:info@devstudio.com" class="header-contacts"><svg class="header-contacts-icon envelope">
+            <use href=".\images\icons.svg#envelope" width=16 height=12>
+
+            </use>
+        </svg>info@devstudio.com</a>
+        <a href="tel:+380961111111" class="header-contacts"><svg class="header-contacts-icon smartphone">
+            <use href=".\images\icons.svg#smartphone" width=10 height=16></use>
+        </svg>+38 096 111 11 11</a></div>
     </header>
 
     <!-- main content -->
     <main>
 
         <!-- HERO> -->
-        <section class="hero-section">
+        <section class="hero-section overlay">
+            <div class="container">
             <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
             <button type="button" class="main-button">
                 Заказать услугу
-            </button>
+            </button></div>
         </section>
 
         <!-- Advantages -->
@@ -47,28 +55,28 @@
         <section class="advantages-section">
             <div class="container">
                 <h2 class="hidden">Наши преимущества</h2>
-                <ul>
-                    <li>
-                        <div>
+                <ul  class="list grid advantages-list">
+                    <li class="grid-item advantages-list-item icon-antenna">
+                        <div class="advantages-list-card">
                             <h3 class="advantages-header">Внимание к деталям</h3>
                             <p class="advantages-paragraph">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                         </div>
                     </li>
-                    <li>
-                        <div>
+                    <li class="grid-item advantages-list-item icon-clock">
+                        <div class="advantages-list-card">
                             <h3 class="advantages-header">Пунктуальность</h3>
                             <p class="advantages-paragraph">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                         </div>
                     </li>
-                    <li>
-                        <div>
+                    <li class="grid-item advantages-list-item icon-diagram">
+                        <div class="advantages-list-card">
                             <h3 class="advantages-header">Планирование</h3>
                             <p class="advantages-paragraph">Равным образом консультация с широким активом в значительной степени обуславливает.
                             </p>
                         </div>
                     </li>
-                    <li>
-                        <div>
+                    <li class="grid-item advantages-list-item icon-astronaut">
+                        <div class="advantages-list-card">
                             <h3 class="advantages-header">Современные технологии</h3>
                             <p class="advantages-paragraph">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                         </div>
