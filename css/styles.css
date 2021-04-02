@@ -65,7 +65,7 @@ img {
 .grid-item {
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc(100%- (30px * var(--grid-item)) / var(--grid-item));
+  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
 }
 
 /* header styles */
@@ -279,7 +279,8 @@ header {
   margin-bottom: 94px;
 }
 .work-section-header,
-.team-section-header {
+.team-section-header,
+.clients-header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -300,24 +301,71 @@ header {
 }
 .team-list-card {
   background-color: var(--important-color);
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.teammate-photo {
+  margin-bottom: 30px;
 }
 .teammates-names {
   color: var(--important-text-color);
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
+}
+.teammates-position {
+  margin-bottom: 16px;
 }
 .social-icons-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
   width: 44px;
   height: 44px;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--accent-color);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  fill: var(--common-text-color);
 }
-.social-icon {
-  fill: var(--important-text-color);
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--important-color);
 }
+.social-icons-set + .social-icons-set {
+  margin-left: 10px;
+  align-items: center;
+}
+.social-icons-list {
+  justify-content: center;
+}
+/* Our clients */
+
+.our-clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  fill: var(--common-text-color);
+  border: 1px solid var(--common-text-color);
+  border-radius: 4px;
+}
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+.clients-items {
+  --grid-item: 6;
+}
+
 /* Portfolio page styles */
 
 .simple-button {
@@ -364,7 +412,6 @@ header {
 footer {
   background-color: var(--main-color);
 }
-
 .studio-down {
   font-family: Raleway;
   font-weight: 700;
@@ -389,4 +436,14 @@ address {
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-color);
+}
+.all-footer {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.join-us {
+  text-transform: uppercase;
+  color: var(--important-color);
+  font-weight: 700;
 }
