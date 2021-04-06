@@ -501,6 +501,7 @@ address {
 .all-footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 60px;
     padding-bottom: 60px;
 }
